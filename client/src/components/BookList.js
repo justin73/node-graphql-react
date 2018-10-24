@@ -31,5 +31,9 @@ class BookList extends Component {
 		);
 	}
 }
-
+// graphql used to glue the query and the component
+/**
+ * @param first one is the graphql query we use in the graphql server
+ * @param second one is the component which will receive the data
+ */
 export default graphql(getBooksQuery)(BookList);
