@@ -33,7 +33,7 @@ const addBookMutation = gql`
 `;
 
 const getBookQuery = gql`
-	query($id: String) {
+	query($id: ID) {
 		book(id: $id) {
 			id
 			name
